@@ -1,0 +1,16 @@
+<%= form_tag("/pastum/create", method: "post") do %>
+  <%= label_tag(:name, "Pasta Shape:") %>
+  <%= text_field_tag(:name) %>
+
+  <%= label_tag(:texture, "Pasta Texture:") %>
+  <%= text_field_tag(:texture) %>
+
+  <%= label_tag(:color, "Pasta Color:") %>
+  <%= text_field_tag(:color) %>
+
+  <%= label_tag(:price, "Pasta Price:") %>
+  <%= number_field_tag(:price) %>
+
+
+  <%= submit_tag("Make Pastum") %>
+<% end %>

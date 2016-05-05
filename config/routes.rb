@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'pastum#index'
+  get 'pastum/new' => 'pastum#new'
+  post 'pastum/new' =>'pastum#create'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
